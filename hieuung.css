@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Quicksand", "Montserrat", sans-serif;
+  background-color: #f7f1e3; 
+  color: #3e2723;
+  line-height: 1.6;
+}
+.cv {
+  display: flex;
+  width: 80%;
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #fff8e7;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 40%;
+  background-color: #7f5539; 
+  color: #f8edeb; 
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #f8edeb;
+  margin-bottom: 20px;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #ffe8d6;
+}
+.title {
+  font-size: 14px;
+  color: #ddb892;
+  margin-bottom: 25px;
+}
+.sidebar section {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.sidebar h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #b08968;
+  padding-bottom: 4px;
+  color: #ffedd8;
+}
+.sidebar p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.skill {
+  margin-bottom: 10px;
+}
+.skill-name {
+  font-size: 13px;
+  color: #ffe8d6;
+  margin-bottom: 4px;
+}
+.skill-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.skill-bar span {
+  display: block;
+  height: 100%;
+  background: #e6ccb2; 
+  border-radius: 4px;
+}
+
+.content {
+  width: 60%;
+  padding: 35px 40px;
+  background-color: #fffaf2;
+}
+.header h1 {
+  font-size: 26px;
+  color: #7f5539;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.job {
+  color: #9c6644;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.content section {
+  margin-bottom: 25px;
+}
+.content h3 {
+  font-size: 16px;
+  color: #7f5539;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #b08968;
+  display: inline-block;
+  padding-bottom: 3px;
+}
+.item {
+  margin-bottom: 12px;
+  border-left: 3px solid #b08968;
+  padding-left: 10px;
+}
+.item time {
+  display: block;
+  color: #8d6e63;
+  font-size: 13px;
+}
+.item p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .cv {
+    flex-direction: column;
+    width: 95%;
+  }
+  .sidebar, .content {
+    width: 100%;
+  }
+  .photo {
+    margin: 0 auto 20px auto;
+  }
+  .sidebar {
+    align-items: center;
+    text-align: center;
+  }
+}
